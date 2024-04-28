@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p class="title">
+    This is my test blog.
+</p>
+<script>
+    window.location.replace("{{ get_url(path='@/blog/_index.md') }}");
+</script>
+{% endblock content %}

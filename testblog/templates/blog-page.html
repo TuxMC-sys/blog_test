@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<hr/>
+<h1 class="centered">
+    {{ page.title }}
+</h1>
+
+{{ page.content | safe }}
+<div class="footer">
+    <p>Originally Written: {{ page.date }}</p>
+    <p>If updated, the last update was on: {{ page.updated }}</p>
+</div>
+{% endblock content %}
+
